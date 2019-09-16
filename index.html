@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+	  <h1 id="title">Passenger Shaming Awards</h1>
+	   <div id="form-body">	
+	    <p id="description">PSA - Crew Satisfaccion Survey</p>
+	     <form id="survey-form" method="post">
+			<div class="row">
+				<div class "labels">
+				 <label id="name-label" for="name">Name:</label></div>
+			<div class="tab">
+				<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Crew Name" required></div>
+				</div>
+			<div class="row">
+				<div class="labels">
+				 <label id="email-label" for="email">E-mail:</label>
+			</div>
+			<div class="tab"><input type="email" name="email" id="email" class="input-field" required placeholder="Work Email"></div>
+			</div>
+			<div class="row">
+				<div class="labels">
+					<label id="number-label" for="age">Age:</label>
+				</div>
+				<div class="tab">
+					<input type="number" name="age" id="number" min="18" max="100" class="input-field" placeholder="Age"></div>
+					 </div>
+					
+			<div class="row">
+			  <div class="labels">
+				<label for="rank">Please enter your Cabin Crew Rank</label>
+				</div>
+				<div class="tab">
+					<select id="dropdown" name="rank" class="dropdown">
+					  <option disabled value>Select a Rank</option>
+					  <option value="fa">Flight Attendant</option>
+					  <option value="bc">Premium Cabin</option>
+					  <option value="CS">Purser</option>
+					  <option value="CSD">Chief Purser</option>
+					</select>
+				</div>
+				</div>
+			<div class="row">
+				<div class="labels">
+					<label for="Rating">How long have you been flying?</label>
+				</div>
+				<div class="tab">
+					<ul style="list-style:none;">
+						<li class="radio">
+							<label>One week and I love it! :D
+							<input name="radio-buttons" value="1" type="radio" class="userRatings"><lable>
+						</li>
+						
+						<li><label>Three months and starting to understand other's crew crankiness <input name="radio-buttons" value="2" type="radio" class="userRatings"><lable></li>
+						
+						<li><label>Two Years SSDD<input name="radio-buttons" value="3" type="radio" class="userRatings"><lable></li>
+						
+						<li><label>Five Years -_-'<input name="radio-buttons" value="4" type="radio" class="userRatings"><lable></li>
+						
+						<li><label>I used to flight propel airplanes before you were born<input name="radio-buttons" value="5" type="radio" class="userRatings"><lable></li>
+						
+						<li><label>FML Im death inside<input name="radio-buttons" value="6" type="radio" class="userRatings"><lable></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+			   <div class="labels">
+				<label for ="like">What of the following Pax (passengers) do that you dislike the most</label>
+			</div>
+				<div class="tab">
+					<select id="like" name="like" class"dropdown">
+						<option disable selected value>Select an option</option>
+						<option value="bathroom">Going to the lavatory in the middle of a turbulence like having a death wish</option>
+						<option value="coke">Asking for a drink in a middle of an emergency</option>
+						<option value="chil">Leave their kids playing with the call bell</option>
+						<option value="menu">Not reading the menus and making new menu items</option>
+						<option value="Food">Giving trash/used trays while the FA is handling food</option>
+						<option value="Tamtrum">Making a tamtrum like a two years old when ran out of meal choises</option>
+						<option value="conection">Asking if their gonna make it to their connecting flight</option>
+						<option value="geography">Asking whats the name of the mountain we just flight above</option>
+						<option value="bag">Expecting the FA to store pax luggage</option>
+						<option value="All">All of the above</option></select>
+				</div>
+			</div>
+			<div class="row"><div class="labels">
+				<label for="preferences">What would you like us to improve<br>(Check all that apply)</label></div>
+			<div class="tab">
+				<ul id="preferences" style="list-style: none;"><li></li>
+				<li class="checkbox">
+					<label>
+					<input name="prefer" class="choose" value="1" type="checkbox">"More Money"</label></li>
+					<li class="checkbox">
+						<label>
+						  <input name="prefer" class="choose" value=2 type="checkbox">"Longer Layovers"</label></li>
+					<li class="checkbox">
+						<label>
+						  <input name="prefer" class="choose" value=3 type="checkbox">"Better Hotels"</label></li>
+					<li class="checkbox">
+						<label>
+						  <input name="prefer" class="choose" value=4 type="checkbox">"Better Crew Meals"</label></li>
+					<li class="checkbox">
+						<label>
+						  <input name="prefer" class="choose" value=5 type="checkbox">"More Lavatories"</label></li>
+					<li class="checkbox">
+						<label>
+						  <input name="prefer" class="choose" value=6 type="checkbox">"Being able to punch a Pax at least once a year"</label></li>
+					<li class="checkbox">
+						<label>
+						  <input name="prefer" class="choose" value=7 type="checkbox">"A "yoga" area for streching pax"</label></li>
+					<li class="checkbox">
+						<label>
+						  <input name="prefer" class="choose" value=8 type="checkbox">"Being able to punch a Pax at least once a year (for real)"</label></li>
+				</ul>
+			</div>
+			</div>
+			<div class="row">
+				<div class="labels">
+					<label for="comments">Would you like to add an on-board experience?</label>
+				</div>
+				<div class="tab"><textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Tell us about it!"></textarea></div>
+			</div>
+			<button id="submit" type="submit">send</button>
+		
+	</form><br>
+	<img src="https://i.pinimg.com/236x/43/b0/d0/43b0d0a63734372e7ebcba443d2084b5.jpg" alt="crew life">
+	<div>
+	</body>
+</html>
